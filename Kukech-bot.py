@@ -15,14 +15,7 @@ class States(StatesGroup):
     SET_FILE = State()
     SET_NAME = State()
 
-#@dp.message_handler(commands=["GetStates"], state=[States.BASIC_STATE])
-#async def states(message:types.Message):
-    #updates = await bot.get_updates()
-    #for i in range(20):
-        #await message.reply(updates.pop())
 
-#async def change_title(group_id='-1001423174338', member_id='620636177', new_status='Чмошечка'):
-    #await bot.set_chat_administrator_custom_title(group_id, member_id, new_status)
 
 
 @dp.message_handler(commands=["Help"], state=[States.BASIC_STATE])
