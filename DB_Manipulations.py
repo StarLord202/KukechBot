@@ -2,7 +2,7 @@ import asyncpg
 import asyncio
 import time
 #from CustomExceptions import AlreadyExistsException
-
+#
 #name, file_id
 
 async def start_conn(keys = {"database":"bot", "user":"postgres", "password":"Kirill2016", "host":"localhost"}):
