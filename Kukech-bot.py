@@ -28,8 +28,6 @@ async def send_help(message:types.Message):
 
 @dp.message_handler(filters.CommandStart())
 async def send_start_information(message:types.Message):
-    #await bot.promote_chat_member('-1001423174338', '388142124', can_delete_messages=True, can_pin_messages=True, can_change_info=True, can_promote_members=True, can_restrict_members=True, can_invite_users=True)
-    #await change_title()
     await States.BASIC_STATE.set()
     await message.reply("Этот бот создан для защиты человечевства от кукечей, для подробной информации воспользуйтесь командой /Help")
 
